@@ -268,6 +268,58 @@ ZMK Studioを使用することで、キーマッピングを簡単に変更す�
 ### アプリ版 ZMK Studio
 アプリ版のZMK Studioは、[こちら](https://zmk.studio/download)からダウンロードできます。アプリ版では、無線接続のままキーマップの変更が可能です。ケーブルを接続する手間を省き、より柔軟にキーマッピングを調整することができます。
 
+## キーマップエディターでキーマッピング変更
+キースイッチのマッピングだけでなく、エンコーダーのキーマッピング、マクロやコンボの追加、編集をしたい場合、[キーマップエディター](https://nickcoutsos.github.io/keymap-editor/)を使用して変更可能です。
+
+キーマップエディターでマッピングを変更するためには、ご自身のgithubアカウントでmtk64ebtのファームウェアリポジトリをフォークして、キーマップエディターで編集する必要があります。
+
+操作はブラウザだけで完結するので、特別なツールは不要です。
+
+1. https://github.com/mentako-ya/zmk-config-mtk64 を開いて画面右上の「Fork」をクリック
+<img src="image/keymap_editor/ke_001.png" width="80%" style="border: 1px solid;"/>
+
+2. 「Create fork」のボタンをクリック
+<img src="image/keymap_editor/ke_002.png" width="80%" style="border: 1px solid;"/>
+
+3. ご自身のgitHubアカウントにzmk-config-mtk64のフォークが作成されます
+<img src="image/keymap_editor/ke_003.png" width="80%" style="border: 1px solid;"/>
+
+4. https://nickcoutsos.github.io/keymap-editor/ を開いて「GitHUb」のアイコンをクリック
+<img src="image/keymap_editor/ke_004.png" width="80%" style="border: 1px solid;"/>
+
+5. 先ほどzmk-config-mtk64のフォークを作成したGitHubのアカウントで認証
+<img src="image/keymap_editor/ke_005.png" width="80%" style="border: 1px solid;"/>
+
+6. 「Authorize Keymap Editor」をクリック
+<img src="image/keymap_editor/ke_006.png" width="80%" style="border: 1px solid;"/>
+
+7. 「Add Repository」をクリック
+<img src="image/keymap_editor/ke_007.png" width="80%" style="border: 1px solid;"/>
+
+8. 「Only select repositories」のラジオボタンを選択 -> 「Select repositories」のプルダウンから「zmk-config-mtk64」を選択 -> 「Install」をクリック
+<img src="image/keymap_editor/ke_008.png" width="80%" style="border: 1px solid;"/>
+
+9. キーマップエディター画面でキーマップを修正
+<img src="image/keymap_editor/ke_009.png" width="80%" style="border: 1px solid;"/>
+
+10. 例として、エンコーダーのキーマップを変更
+<img src="image/keymap_editor/ke_010.png" width="80%" style="border: 1px solid;"/>
+
+11. saveボタンを押して変更したキーマップをコミット
+<img src="image/keymap_editor/ke_011.png" width="80%" style="border: 1px solid;"/>
+
+12. フォークした自分のzmk-config-mtk64リポジトリをブラウザで開く -> Actionsメニュー　-> .github/workflows/build.yml選択 ->  「Run workflow」クリック-> Run workflow
+<img src="image/keymap_editor/ke_012.png" width="80%" style="border: 1px solid;"/>
+
+13. 実行完了後、「Merge Output Artifacts」を開く
+<img src="image/keymap_editor/ke_013.png" width="80%" style="border: 1px solid;"/>
+
+14. Artifact download URL:のリンクから、ビルドしたファームウェアをダウンロード
+<img src="image/keymap_editor/ke_014.png" width="80%" style="border: 1px solid;"/>
+
+15. [ファームウェア書き込み](#ファームウェア書き込み)の手順に従って書き込み
+
+
 
 ## トラックボール設定
 
