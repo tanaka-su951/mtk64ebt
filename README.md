@@ -5,7 +5,6 @@
 - [オンラインストア](#オンラインストア)
 - [本体以外に必要なパーツとおすすめ商品](#本体以外に必要なパーツとおすすめ商品)
 - [特徴](#特徴)
-- [フットスイッチ拡張基板](#フットスイッチ拡張基板)
 - [使用方法](#使用方法)
     - [モジュール間接続](#モジュール間接続)
     - [USB接続](#usb接続)
@@ -13,22 +12,22 @@
     - [ロープロファイル化](#ロープロファイル化)
     - [フットスイッチ拡張キット](#フットスイッチ拡張キット)
     - [フットスイッチ無線化モジュール](#フットスイッチ無線化モジュール)
-    - [ファームウェア](#ファームウェア)
-        - [左右構成用ファームウェア](#左右構成用ファームウェア)
-        - [左右＋フットスイッチ無線化モジュール用ファームウェア](#左右フットスイッチ無線化モジュール用ファームウェア)
-        - [ファームウェア書き込み](#ファームウェア書き込み)
-        - [ソースコード](#ソースコード)
-    - [ZMK Studioでキーマッピング変更](#zmk-studioでキーマッピング変更)
-        - [ブラウザ版 ZMK Studio](#ブラウザ版-zmk-studio)
-        - [アプリ版 ZMK Studio](#アプリ版-zmk-studio)
-    - [トラックボール設定](#トラックボール設定)
-        - [トラックボール設定変更](#トラックボール設定変更)
-        - [レイヤー設定変更](#レイヤー設定変更)
-        - [トラックボール設定値調整](#トラックボール設定値調整)
+- [ファームウェア](#ファームウェア)
+    - [左右構成用ファームウェア](#左右構成用ファームウェア)
+    - [左右＋フットスイッチ無線化モジュール用ファームウェア](#左右フットスイッチ無線化モジュール用ファームウェア)
+    - [ファームウェア書き込み](#ファームウェア書き込み)
+    - [ソースコード](#ソースコード)
+- [ZMK Studioでキーマッピング変更](#zmk-studioでキーマッピング変更)
+    - [ブラウザ版 ZMK Studio](#ブラウザ版-zmk-studio)
+    - [アプリ版 ZMK Studio](#アプリ版-zmk-studio)
+- [キーマップエディターでキーマッピング変更](#キーマップエディターでキーマッピング変更)
+- [トラックボール設定](#トラックボール設定)
+    - [トラックボール設定変更](#トラックボール設定変更)
+    - [レイヤー設定変更](#レイヤー設定変更)
+    - [トラックボール設定値調整](#トラックボール設定値調整)
 - [ケースデータ](#ケースデータ)
 
-# mtk64ebt
-
+# _¥mtk64ebt
 <img src="image/mtk64ebt_1
 .jpg" width="80%" style="border: 1px solid;"/><br>
 
@@ -55,20 +54,18 @@ mtk64ebtは、親指操作トラックボールとロータリーエンコーダ
 
 <img src="image/footswitch.jpg" width="80%" style="border: 1px solid;"/><br>
 
-## !!!注意事項!!!
-
+[!CAUTION]
 バッテリー駆動用に[リチウムポリマーバッテリー](https://amzn.asia/d/1ivvf2l)を使用します。
 バッテリーの取り扱いを誤った場合や、製造上の不具合により、破裂や発火の恐れがあります。
 組み立ての際に動作確認は行っていますが、絶対に安全であることを保証するものではありません。
 バッテリーは使用者の責任において使用してください。
+<B>バッテリー、本体基板、その他構成部品を含め、本製品による事故および不利益損害についての一切の責任は使用者にあり、当方が責任を持つものではありません。</B>
 
 * バッテリー駆動時および、充電時は本体側面のバッテリー駆動用スイッチをONにしてください。
 * バッテリー不使用時はバッテリー駆動用スイッチをOFFにしてください。
 * 充電中は、発火・破裂しても被害のない場所を選定し、周囲に延焼するものを置かないようにして下さい。また充電中はその場を離れ ることなく常に Li-Po の充電状態を監視して下さい。
 * バッテリーの取り扱いや製造上の不具合について懸念がある場合や、ご自身の責任で使用できない場合、キーボードからバッテリーを取り外してご使用ください。
 USB端子からの給電のみでキーボードを使用できます。
-
-バッテリー、本体基板、その他構成部品を含め、本製品による事故および不利益損害についての一切の責任は使用者にあり、当方が責任を持つものではありません。
 
 ## オンラインストア
 https://mentako-ya.myshopify.com
@@ -169,9 +166,9 @@ mtk64bleは、右手モジュールがセントラルモジュールとして動
 
 左手モジュールやフットスイッチ無線化モジュールは、USB接続時に充電のみを行います。これらのモジュールは、操作に必要な通信をすべて無線接続でセントラルモジュール（右手モジュール）と行います。
 
-> [!CAUTION]
-> 右手モジュールと左手モジュールにある3.5mmジャックはフットスイッチ拡張キットを有線接続するための端子です。左右間の有線接続用ではありません。
-> 故障の原因となるので、左右のキーボードをTRSケーブルで接続しないでください。
+[!CAUTION]
+右手モジュールと左手モジュールにある3.5mmジャックはフットスイッチ拡張キットを有線接続するための端子です。左右間の有線接続用ではありません。
+故障の原因となるので、左右のキーボードをTRSケーブルで接続しないでください。
 
 ## Bluetooth接続
 
@@ -219,8 +216,13 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 ### 左右構成用ファームウェア
 [mtk64ebt_Right_Left.zip](firmware/mtk64ebt_Right_Left.zip)
 
+[!IMPORTANT]
+フットスイッチ無線化モジュールを使用しない場合、こちらのファームウェアを使用してください。
+フットスイッチ無線化モジュールとの通信待ちで動作が遅くなる場合があります。
+
 ### 左右＋フットスイッチ無線化モジュール用ファームウェア
 [mtk64ebt_Right_Left_Foot.zip](firmware/mtk64ebt_Right_Left_Foot.zip)
+
 
 ### ファームウェア書き込み
 
@@ -256,6 +258,15 @@ LEDの色と接続状態については[こちら](https://github.com/mentako-ya
 
 https://github.com/mentako-ya/zmk-config-mtk64
 
+#### 左右構成用ファームウェアブランチ
+
+https://github.com/mentako-ya/zmk-config-mtk64/tree/nofoot
+
+#### 左右＋フットスイッチ無線化モジュール用ブランチ
+
+https://github.com/mentako-ya/zmk-config-mtk64/tree/master
+
+
 ## ZMK Studioでキーマッピング変更
 
 ZMK Studioを使用することで、キーマッピングを簡単に変更することができます。
@@ -276,42 +287,55 @@ ZMK Studioを使用することで、キーマッピングを簡単に変更す�
 操作はブラウザだけで完結するので、特別なツールは不要です。
 
 1. https://github.com/mentako-ya/zmk-config-mtk64 を開いて画面右上の「Fork」をクリック
+
 <img src="image/keymap_editor/ke_001.png" width="80%" style="border: 1px solid;"/>
 
 2. 「Create fork」のボタンをクリック
+
 <img src="image/keymap_editor/ke_002.png" width="80%" style="border: 1px solid;"/>
 
 3. ご自身のgitHubアカウントにzmk-config-mtk64のフォークが作成されます
+
 <img src="image/keymap_editor/ke_003.png" width="80%" style="border: 1px solid;"/>
 
 4. https://nickcoutsos.github.io/keymap-editor/ を開いて「GitHUb」のアイコンをクリック
+
 <img src="image/keymap_editor/ke_004.png" width="80%" style="border: 1px solid;"/>
 
 5. 先ほどzmk-config-mtk64のフォークを作成したGitHubのアカウントで認証
+
 <img src="image/keymap_editor/ke_005.png" width="80%" style="border: 1px solid;"/>
 
 6. 「Authorize Keymap Editor」をクリック
+
 <img src="image/keymap_editor/ke_006.png" width="80%" style="border: 1px solid;"/>
 
 7. 「Add Repository」をクリック
+
 <img src="image/keymap_editor/ke_007.png" width="80%" style="border: 1px solid;"/>
 
 8. 「Only select repositories」のラジオボタンを選択 -> 「Select repositories」のプルダウンから「zmk-config-mtk64」を選択 -> 「Install」をクリック
+
 <img src="image/keymap_editor/ke_008.png" width="80%" style="border: 1px solid;"/>
 
-9. キーマップエディター画面でキーマップを修正
+9. キーマップエディター画面でフォークしたリポジトリとブランチを選択　フットスイッチ無線化モジュールを使用する場合masterブランチを選択　フットスイッチ無線化モジュールを使用しない場合nofootブランチを選択
+
 <img src="image/keymap_editor/ke_009.png" width="80%" style="border: 1px solid;"/>
 
-10. 例として、エンコーダーのキーマップを変更
+10. キーをクリックして編集　例として、エンコーダーのキーマップを変更
+
 <img src="image/keymap_editor/ke_010.png" width="80%" style="border: 1px solid;"/>
 
 11. saveボタンを押して変更したキーマップをコミット
+
 <img src="image/keymap_editor/ke_011.png" width="80%" style="border: 1px solid;"/>
 
 12. フォークした自分のzmk-config-mtk64リポジトリをブラウザで開く -> Actionsメニュー　-> .github/workflows/build.yml選択 ->  「Run workflow」クリック-> Run workflow
+
 <img src="image/keymap_editor/ke_012.png" width="80%" style="border: 1px solid;"/>
 
 13. 実行完了後、「Merge Output Artifacts」を開く
+
 <img src="image/keymap_editor/ke_013.png" width="80%" style="border: 1px solid;"/>
 
 14. Artifact download URL:のリンクから、ビルドしたファームウェアをダウンロード
