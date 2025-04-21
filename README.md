@@ -203,9 +203,9 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 配線の色は使用するケーブルのメーカーによって異なります。
 ４極プラグの端子側とフットスイッチ拡張キット側の結線は下図を参照してください。
 
-<img src="buildgide/footswitch_kit/plug_to_wire_back.jpg" width="41%" style="border: 1px solid;"/>
-<img src="buildgide/footswitch_kit/plug_to_wire_up.jpg" width="38.5%" style="border: 1px solid;"/><br>
-<img src="buildgide/footswitch_kit/plug_to_wire_side.jpg" width="80%" style="border: 1px solid;"/>
+<img src="buildgide/footswitch_kit/plug_to_wire_back.jpg" width="60%" style="border: 1px solid;"/><br>
+<img src="buildgide/footswitch_kit/plug_to_wire_up.jpg" width="60%" style="border: 1px solid;"/><br>
+<img src="buildgide/footswitch_kit/plug_to_wire_side.jpg" width="60%" style="border: 1px solid;"/>
 
 
 ## フットスイッチ無線化モジュール
