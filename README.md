@@ -190,7 +190,7 @@ Choc V1、V2を使用する場合、トッププレート固定用ネジ(T5 8mm)
 
 フットスイッチ拡張キットはご自身で市販のフットスイッチにキットの基盤を組み込み、はんだ付けをするキットです。
 
-フットスイッチの作成方法は[こちらのビルドムービー](https://youtu.be/NavGAliALVc?si=JpO-xi0RZznjVi4-)をご覧ください.
+フットスイッチの作成方法は[こちらのビルドムービー](https://youtu.be/NavGAliALVc?si=JpO-xi0RZznjVi4-)をご覧ください。
 
 フットスイッチの接続は3.5mm４極のTRRS端子を使用しますが、有線でフットスイッチを接続する場合（3ccccqaac0cm以上のケーブル長が必要な場合）、市販のTRRSケーブルは線が細すぎるので使用できません
 
@@ -199,6 +199,14 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 [遊舎工房自作ケーブルキット](https://shop.yushakobo.jp/products/self-made-cable?_pos=1&_sid=79305908f&_ss=r&variant=39623339737249)
 
 [AWG26 4Cシールドケーブル](https://shop.oyaide.com/products/mogami_2893.html)
+
+配線の色は使用するケーブルのメーカーによって異なります。
+４極プラグの端子側とフットスイッチ拡張キット側の結線は下図を参照してください。
+
+<img src="buildgide/footswitch_kit/plug_to_wire_back.jpg" width="41%" style="border: 1px solid;"/>
+<img src="buildgide/footswitch_kit/plug_to_wire_up.jpg" width="38.5%" style="border: 1px solid;"/><br>
+<img src="buildgide/footswitch_kit/plug_to_wire_side.jpg" width="80%" style="border: 1px solid;"/>
+
 
 ## フットスイッチ無線化モジュール
 
@@ -212,6 +220,7 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 <img src="image/fooswitch_btmodule_parts.jpg" width="40%" style="border: 1px solid;"/>
 <img src="image/footswitch_extend.jpg" width="40%" style="border: 1px solid;"/> 
+
 
 ## ファームウェア
 
