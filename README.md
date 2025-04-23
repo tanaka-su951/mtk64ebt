@@ -17,7 +17,9 @@
     - [左右構成用ファームウェア](#左右構成用ファームウェア)
     - [左右＋フットスイッチ無線化モジュール用ファームウェア](#左右フットスイッチ無線化モジュール用ファームウェア)
     - [ファームウェア書き込み](#ファームウェア書き込み)
-    - [ソースコード](#ソースコード)
+- [ソースコード](#ソースコード)
+    - [左右構成用ファームウェアブランチ](#左右構成用ファームウェアブランチ)
+    - [左右＋フットスイッチ無線化モジュール用ブランチ](#左右フットスイッチ無線化モジュール用ブランチ)
 - [ZMK Studioでキーマッピング変更](#zmk-studioでキーマッピング変更)
     - [ブラウザ版 ZMK Studio](#ブラウザ版-zmk-studio)
     - [アプリ版 ZMK Studio](#アプリ版-zmk-studio)
@@ -237,7 +239,12 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 ### ファームウェア書き込み
 
-1. 右手キーボードをPCに接続した状態でリセットボタンを短く2回押下
+1. 右手キーボード、左手手キーボード、フットスイッチ拡張モジュールのバッテリー駆動スイッチをOFFにする
+
+> [!IMPORTANT]
+> バッテリーから給電された状態ではファームウェア書き込み後のリセットが正しく行われません
+
+1. 右手キーボードをPCにUSB接続してリセットボタンを短く2回押下
 
 1. 認識された”XIAO-SENSE"に settings_reset-seeeduino_xiao_ble-zmk.uf2 をドロップ
 
@@ -245,7 +252,7 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 1. 認識された”XIAO-SENSE"に mtk64_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2 をドロップ
 
-1. 左手キーボードをPCに接続した状態でリセットボタンを短く2回押下
+1. 左手キーボードをPCにUSB接続してリセットボタンを短く2回押下
 
 1. 認識された”XIAO-SENSE"にsettings_reset-seeeduino_xiao_ble-zmk.uf2をドロップ
 
@@ -253,7 +260,7 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 1. 認識された”XIAO-SENSE"に mtk64_L rgbled_adapter-seeeduino_xiao_ble-zmk.uf2 をドロップ
 
-1. フットスイッチ無線化モジュールをPCに接続した状態でリセットボタンを短く2回押下
+1. フットスイッチ無線化モジュールをPCにUSB接続してリセットボタンを短く2回押下
 
 1. 認識された”XIAO-SENSE"にsettings_reset-seeeduino_xiao_ble-zmk.uf2をドロップ
 
@@ -261,11 +268,19 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 1. 認識された”XIAO-SENSE"に mtk64_FOOT rgbled_adapter-seeeduino_xiao_ble-zmk.uf2 をドロップ
 
+1. 右手キーボードをPCにUSB接続、左手キーボードとフットスイッチ拡張モジュールはバッテリー駆動スイッチをONにして給電する
+
 1. 各モジュールのリセットスイッチを１回押下、各モジュール間の接続状態をUSB端子横のLEDで確認
 
-LEDの色と接続状態については[こちら](https://github.com/mentako-ya/zmk-rgbled-widget/blob/main/README.md)
+- 右手のLEDはPCとのBluetooth接続状態を表す。
+接続中🔵、オープン (アドバタイズ)🟡、切断中🔴 が点滅
 
-### ソースコード
+- 左手とフットスイッチ無線化モジュールのLEDは、右手（セントラル）とのペアリング状態を表す。
+接続の場合は🔵、切断の場合は🔴が点滅
+
+LEDの色と接続状態についての詳細は[こちら](https://github.com/mentako-ya/zmk-rgbled-widget/blob/main/README.md)
+
+## ソースコード
 
 https://github.com/mentako-ya/zmk-config-mtk64
 
@@ -280,7 +295,7 @@ https://github.com/mentako-ya/zmk-config-mtk64/tree/master
 
 ## ZMK Studioでキーマッピング変更
 
-ZMK Studioを使用することで、キーマッピングを簡単に変更することができます。
+ZMK Studioを使用することで、ファームウェア書き換えなしでキーマッピングを簡単に変更することができます。
 
 <img src="image/zmk_studio_app.png" width="80%" style="border: 1px solid;"/><br>
 
