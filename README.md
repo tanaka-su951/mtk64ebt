@@ -31,8 +31,7 @@
 - [ケースデータ](#ケースデータ)
 
 # mtk64ebt
-<img src="image/mtk64ebt_1
-.jpg" width="80%" style="border: 1px solid;"/><br>
+<img src="image/rev3/0.mtk64ebt_b_FLR.jpg" width="80%" style="border: 1px solid;"/><br>
 
 ### トラックボール＆ロータリーエンコーダー付きBluetooth接続自作キーボード
 
@@ -43,13 +42,29 @@ mtk64ebtは、親指操作トラックボールとロータリーエンコーダ
 ワイヤレス接続によりケーブルの煩わしさから解放され、どこへでも快適に持ち運べます。
 
 はんだ付けとケースの組み立てが完了している半完成キットです。キースイッチとキーキャップ、トラックボールを取り付けるだけで、すぐに使用を開始することができます。
-<img src="image/mtk64ebt_LR.jpg" width="80%" style="border: 1px solid;"/><br>
+
+#### Rev.3の特徴
+基板設計とケース設計を更新してRev.3になりました。
+
+##### バッテリーケースのスリム化
+部品配置の見直しにより、バッテリーサイズはそのままでバッテリーケースをスリム化しました。(バッテリーケース部厚み 22mm → 18.5mm)
+ケース形状も変更してすっきりした見た目になっています。
+<img src="image/rev3/3.mtk64ebt_b_side.jpg" width="80%" style="border: 1px solid;"/><br>
+
+##### LEDレンズ
+インジケーターLEDにレンズを追加したことにより、視認性が向上しました。
+バッテリー残量、接続状態、レイヤー切り替えが確認しやすくなりました。
+<img src="image/rev3/mtk64ebt_rev3_LED.JPG" width="40%" style="border: 1px solid;"/><br>
+
+##### フットスイッチ完全無線化
+ケーススリム化と生産性向上のため、左右キーボードのフットスイッチ有線接続ジャックを廃止。付属の無線フットスイッチキットによる無線接続に一本化しました。
+
+##### 本体ケース精度向上
+本体ケースの各部寸法調整とネジの取り付け位置を見直しました。
+歪みが少なく組み付け精度が向上しています。
 
 ### フットスイッチ
-
-[市販のUSBフットスイッチ](https://amzn.asia/d/h7wMR24)の基板を付属のフットスイッチ拡張基盤に差し替えてmtk64の拡張フットスイッチとして使用可能です。
-
-さらに、フットスイッチをフットスイッチ無線化モジュールに接続することで、無線フットスイッチ構成にアップグレード可能です。
+[市販のUSBフットスイッチ](https://amzn.asia/d/h7wMR24)の基板を付属のフットスイッチ拡張基盤に差し替えてmtk64の拡張無線フットスイッチとして使用可能です。
 
 フットスイッチも含めて完全ワイヤレス化可能となり、デスク環境からケーブルの煩わしさを一掃できます。
 
@@ -122,7 +137,7 @@ Choc V1、[V2（固定ピンなしモデル）](https://ja.aliexpress.com/item/1
 
 追加の親指キースイッチは、操作性を向上させるため、さらに一段低くオフセットされています。
 
-<img src="image/mtk64ebt_lowpro.jpg" width="80%" style="border: 1px solid;"/><br>
+<img src="image/rev3/5.mtk64ebt_lowpro.jpg" width="80%" style="border: 1px solid;"/><br>
 
 MCUに[Seeed Studio XIAO nRF52840](https://jp.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html)を使用しており、無線接続の自作キーボードで課題となる技適対応もクリアしています。
 
@@ -130,15 +145,21 @@ MCUに[Seeed Studio XIAO nRF52840](https://jp.seeedstudio.com/Seeed-XIAO-BLE-nRF
 
 <img src="image/mtk64ebt_mcu.png" width="80%" style="border: 1px solid;"/><br>
 
-無線接続では、有線接続に比べてポーリングレートが低くなりますが、通常利用には問題なく使用することが可能です。
+無線接続では、有線接続に比べてポーリングレートが低くなりますが、通常利用には問題なく使用することが可能です。（約70hz）
 
 <img src="image/cpi_test_bt.png" width="80%" style="border: 1px solid;"/><br>
 
-USB接続時には、ポーリングレートが向上し、よりスムーズに動作します。精密なトラックボール操作が求められる場面で効果的です。
+USB接続時には、ポーリングレートが向上し、よりスムーズに動作します。（約220hz）精密なトラックボール操作が求められる場面で効果的です。
 
 有線接続時も右手のみUSB接続となり、左手側は無線接続となるので、USBケーブル１本だけで接続となります。左右間接続用のTRRSケーブルは使用しません。
 
 <img src="image/cpi_test_usb.png" width="80%" style="border: 1px solid;"/><br>
+
+フットスイッチ無線化モジュールをドングルとしてPCに接続することで、左右のキーボードは無線接続のまま、有線接続相当のポーリングレート（約110~220hz）で動作します。
+
+[mtk64ebt ドングル使用時ポーリングレート計測ムービー](https://www.youtube.com/embed/7DrP1KA7Fw4?list=PL_GJMtxZ-TgovRiROU55VTm1dNuUvYyni)
+
+<img src="image/rev3/mtk64ebt_pollingrate.png" width="40%" style="border: 1px solid;"/><br>
 
 右手側のLEDで現在のレイヤーが確認できるようになりました。
 ```
@@ -176,12 +197,12 @@ mtk64bleは、右手モジュールがセントラルモジュールとして動
 
 ## USB接続
 
-右手モジュール（セントラルモジュール）は、PCとUSBで有線接続可能です。USB接続時、右手モジュールはPCとの通信を行いながら、充電も行います。
+右手モジュール（セントラルモジュール）は、PCとUSBで有線接続可能です。USB接続時、セントラルモジュールはPCとの通信を行いながら、充電も行います。
 
-左手モジュールやフットスイッチ無線化モジュールは、USB接続時に充電のみを行います。これらのモジュールは、操作に必要な通信をすべて無線接続でセントラルモジュール（右手モジュール）と行います。
+左手モジュールやフットスイッチ無線化モジュール（ペリフェラルモジュール）は、USB接続時に充電のみを行います。これらのモジュールは、操作に必要な通信をすべて無線接続でセントラルモジュールと行います。
 
 > [!CAUTION]
-> 右手モジュールと左手モジュールにある3.5mmジャックはフットスイッチ拡張キットを有線接続するための端子です。
+> Rev.2以前の右手モジュールと左手モジュールにある3.5mmジャックはフットスイッチ拡張キットを有線接続するための端子です。
 > 左右間の有線接続用ではありません。
 > 故障の原因となるので、左右のキーボードをTRSケーブルで接続しないでください。
 
@@ -247,6 +268,10 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 ### 左右＋フットスイッチ無線化モジュール用ファームウェア
 [mtk64ebt_Right_Left_Foot.zip](firmware/mtk64ebt_Right_Left_Foot.zip)
 
+### 左右＋ドングルモジュール用ファームウェア
+[mtk64ebt_Right_Left_Dongle.zip](firmware/mtk64ebt_Right_Left_Dongle.zip)
+フットスイッチ無線化モジュールをドングルとして使用するモジュールです
+（フットスイッチも利用可能
 
 ### ファームウェア書き込み
 
@@ -302,6 +327,10 @@ https://github.com/mentako-ya/zmk-config-mtk64/tree/nofoot
 #### 左右＋フットスイッチ無線化モジュール用ブランチ
 
 https://github.com/mentako-ya/zmk-config-mtk64/tree/master
+
+#### 左右＋ドングルモジュール用ブランチ
+
+https://github.com/mentako-ya/zmk-config-mtk64/tree/pmw3610-bj-dongle
 
 
 ## ZMK Studioでキーマッピング変更
