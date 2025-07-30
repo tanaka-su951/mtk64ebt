@@ -59,9 +59,19 @@ mtk64ebtは、親指操作トラックボールとロータリーエンコーダ
 ##### フットスイッチ完全無線化
 ケーススリム化と生産性向上のため、左右キーボードのフットスイッチ有線接続ジャックを廃止。付属の無線フットスイッチキットによる無線接続に一本化しました。
 
-##### 本体ケース精度向上
-本体ケースの各部寸法調整とネジの取り付け位置を見直しました。
-歪みが少なく組み付け精度が向上しています。
+##### ベアリング仕様トラックボールケース対応
+トラックボール支持球をベアリングに置き換えるケースデータを公開しています。
+ご自身でプリントしてベアリング仕様に変更可能です。
+
+<img src="image/rev3/mtk64ebt_bearing_case.jpeg" width="40%" style="border: 1px solid;"/>
+<img src="image/rev3/mtk64ebt_bearing_case_trace.jpeg" width="40%" style="border: 1px solid;"/><br>
+
+ケースの他に、ベアリング(内径 1.5mm 外径 4mm 幅 2mmのシールドタイプ)とM1.4のネジが必要です。
+* ベアリング : [ミネベアミスミ DDL-415ZZ](https://amzn.asia/d/fXq8wOI)
+* ネジ : [M1.4-0.3 6mm](https://amzn.asia/d/c3SDJWJ)
+
+###### ケースデータ
+[mtk64ebt_rev3_ballBearingCase_RH.3mf](casedata/rev3/mtk64ebt_rev3_ballBearingCase_RH.3mf)<br>[mtk64ebt_rev3_bodyBallBeringBottmn_RH.3mf](casedata/rev3/mtk64ebt_rev3_bodyBallBeringBottmn_RH.3mf)
 
 ### フットスイッチ
 [市販のUSBフットスイッチ](https://amzn.asia/d/h7wMR24)の基板を付属のフットスイッチ拡張基盤に差し替えてmtk64の拡張無線フットスイッチとして使用可能です。
