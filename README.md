@@ -170,7 +170,7 @@ USB接続時には、ポーリングレートが向上し、よりスムーズ�
 
 <img src="image/cpi_test_usb.png" width="60%" style="border: 1px solid;"/><br>
 
-フットスイッチ無線化モジュールをドングルとしてPCに接続することで、左右のキーボードは無線接続のまま、有線接続相当のポーリングレート（約110~220hz）で動作します。
+[Seeed Studio XIAO BLE](https://jp.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) もしくは [nrf54820搭載モジュール](https://www.switch-science.com/products/5531) をドングルとして使用することで、左右のキーボードは無線接続のまま、有線接続相当のポーリングレート（約110~220hz）で動作します。
 
 <img src="image/rev3/mtk64ebt_dongle.jpg" width="60%" style="border: 1px solid;"/><br>
 
@@ -287,7 +287,8 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 
 ### 左右＋ドングルモジュール用ファームウェア
 [mtk64ebt_Right_Left_Dongle.zip](firmware/mtk64ebt_Right_Left_Dongle.zip)
-フットスイッチ無線化モジュールをドングルとして使用するモジュールです
+
+[Seeed Studio XIAO BLE](https://jp.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) もしくは [nrf54820搭載モジュール](https://www.switch-science.com/products/5531) をドングルとして使用するファームウェアです
 
 ### ファームウェア書き込み
 
