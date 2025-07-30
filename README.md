@@ -172,6 +172,8 @@ USB接続時には、ポーリングレートが向上し、よりスムーズ�
 
 フットスイッチ無線化モジュールをドングルとしてPCに接続することで、左右のキーボードは無線接続のまま、有線接続相当のポーリングレート（約110~220hz）で動作します。
 
+<img src="image/rev3/mtk64ebt_dongle.jpg" width="60%" style="border: 1px solid;"/><br>
+
 [mtk64ebt ドングル使用時ポーリングレート計測ムービー](https://www.youtube.com/embed/7DrP1KA7Fw4?list=PL_GJMtxZ-TgovRiROU55VTm1dNuUvYyni)
 
 <img src="image/rev3/mtk64ebt_pollingrate.png" width="60%" style="border: 1px solid;"/><br>
@@ -286,7 +288,6 @@ TRRS端子とAWG28~26以上（番号が小さい方が太いです）のケー�
 ### 左右＋ドングルモジュール用ファームウェア
 [mtk64ebt_Right_Left_Dongle.zip](firmware/mtk64ebt_Right_Left_Dongle.zip)
 フットスイッチ無線化モジュールをドングルとして使用するモジュールです
-（フットスイッチも利用可能
 
 ### ファームウェア書き込み
 
