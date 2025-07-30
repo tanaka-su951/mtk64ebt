@@ -49,29 +49,34 @@ mtk64ebtは、親指操作トラックボールとロータリーエンコーダ
 ##### バッテリーケースのスリム化
 部品配置の見直しにより、バッテリーサイズはそのままでバッテリーケースをスリム化しました。(バッテリーケース部厚み 22mm → 18.5mm)
 ケース形状も変更してすっきりした見た目になっています。
-<img src="image/rev3/3.mtk64ebt_b_side.jpg" width="80%" style="border: 1px solid;"/><br>
+
+<img src="image/rev3/3.mtk64ebt_b_side.jpg" width="60%" style="border: 1px solid;"/><br>
 
 ##### LEDレンズ
 インジケーターLEDにレンズを追加したことにより、視認性が向上しました。
 バッテリー残量、接続状態、レイヤー切り替えが確認しやすくなりました。
-<img src="image/rev3/mtk64ebt_rev3_LED.JPG" width="40%" style="border: 1px solid;"/><br>
+
+<img src="image/rev3/mtk64ebt_rev3_LED.JPG" width="60%" style="border: 1px solid;"/><br>
 
 ##### フットスイッチ完全無線化
 ケーススリム化と生産性向上のため、左右キーボードのフットスイッチ有線接続ジャックを廃止。付属の無線フットスイッチキットによる無線接続に一本化しました。
+
+<img src="image/fooswitch_btmodule_parts.jpg" width="60%" style="border: 1px solid;"/>
 
 ##### ベアリング仕様トラックボールケース対応
 トラックボール支持球をベアリングに置き換えるケースデータを公開しています。
 ご自身でプリントしてベアリング仕様に変更可能です。
 
-<img src="image/rev3/mtk64ebt_bearing_case.jpeg" width="40%" style="border: 1px solid;"/>
-<img src="image/rev3/mtk64ebt_bearing_case_trace.jpeg" width="40%" style="border: 1px solid;"/><br>
+<img src="image/rev3/mtk64ebt_bearing_case.jpeg" width="60%" style="border: 1px solid;"/>
 
 ケースの他に、ベアリング(内径 1.5mm 外径 4mm 幅 2mmのシールドタイプ)とM1.4のネジが必要です。
 * ベアリング : [ミネベアミスミ DDL-415ZZ](https://amzn.asia/d/fXq8wOI)
 * ネジ : [M1.4-0.3 6mm](https://amzn.asia/d/c3SDJWJ)
 
-###### ケースデータ
+###### ベアリング仕様トラックボールケースデータ
 [mtk64ebt_rev3_ballBearingCase_RH.3mf](casedata/rev3/mtk64ebt_rev3_ballBearingCase_RH.3mf)<br>[mtk64ebt_rev3_bodyBallBeringBottmn_RH.3mf](casedata/rev3/mtk64ebt_rev3_bodyBallBeringBottmn_RH.3mf)
+
+<img src="image/rev3/mtk64ebt_bearing_case_trace.jpeg" width="60%" style="border: 1px solid;"/><br>
 
 ### フットスイッチ
 [市販のUSBフットスイッチ](https://amzn.asia/d/h7wMR24)の基板を付属のフットスイッチ拡張基盤に差し替えてmtk64の拡張無線フットスイッチとして使用可能です。
@@ -163,13 +168,13 @@ USB接続時には、ポーリングレートが向上し、よりスムーズ�
 
 有線接続時も右手のみUSB接続となり、左手側は無線接続となるので、USBケーブル１本だけで接続となります。左右間接続用のTRRSケーブルは使用しません。
 
-<img src="image/cpi_test_usb.png" width="80%" style="border: 1px solid;"/><br>
+<img src="image/cpi_test_usb.png" width="60%" style="border: 1px solid;"/><br>
 
 フットスイッチ無線化モジュールをドングルとしてPCに接続することで、左右のキーボードは無線接続のまま、有線接続相当のポーリングレート（約110~220hz）で動作します。
 
 [mtk64ebt ドングル使用時ポーリングレート計測ムービー](https://www.youtube.com/embed/7DrP1KA7Fw4?list=PL_GJMtxZ-TgovRiROU55VTm1dNuUvYyni)
 
-<img src="image/rev3/mtk64ebt_pollingrate.png" width="40%" style="border: 1px solid;"/><br>
+<img src="image/rev3/mtk64ebt_pollingrate.png" width="60%" style="border: 1px solid;"/><br>
 
 右手側のLEDで現在のレイヤーが確認できるようになりました。
 ```
@@ -193,7 +198,7 @@ USB接続時には、ポーリングレートが向上し、よりスムーズ�
 
 フットスイッチ無線化モジュールに接続して、無線フットスイッチ構成にアップグレード可能です。
 
-<img src="image/footswitch_extend.jpg" width="80%" style="border: 1px solid;"/><br>  
+<img src="image/footswitch_extend.jpg" width="60%" style="border: 1px solid;"/><br>  
 
 # 使用方法
 
@@ -347,7 +352,7 @@ https://github.com/mentako-ya/zmk-config-mtk64/tree/pmw3610-bj-dongle
 
 ZMK Studioを使用することで、ファームウェア書き換えなしでキーマッピングを簡単に変更することができます。
 
-<img src="image/zmk_studio_app.png" width="80%" style="border: 1px solid;"/><br>
+<img src="image/zmk_studio_app.png" width="60%" style="border: 1px solid;"/><br>
 
 ### ブラウザ版 ZMK Studio
 ブラウザ版のZMK Studioを使用する場合、右手側のモジュールをUSB接続し、[こちら](https://zmk.studio/)にアクセスしてください。
@@ -365,58 +370,58 @@ ZMK Studioを使用することで、ファームウェア書き換えなしで�
 
 1. https://github.com/mentako-ya/zmk-config-mtk64 を開いて画面右上の「Fork」をクリック
 
-<img src="image/keymap_editor/ke_001.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_001.png" width="60%" style="border: 1px solid;"/>
 
 2. 「Create fork」のボタンをクリック
 
-<img src="image/keymap_editor/ke_002.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_002.png" width="60%" style="border: 1px solid;"/>
 
 3. ご自身のgitHubアカウントにzmk-config-mtk64のフォークが作成されます
 
-<img src="image/keymap_editor/ke_003.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_003.png" width="60%" style="border: 1px solid;"/>
 
 4. https://nickcoutsos.github.io/keymap-editor/ を開いて「GitHUb」のアイコンをクリック
 
-<img src="image/keymap_editor/ke_004.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_004.png" width="60%" style="border: 1px solid;"/>
 
 5. 先ほどzmk-config-mtk64のフォークを作成したGitHubのアカウントで認証
 
-<img src="image/keymap_editor/ke_005.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_005.png" width="60%" style="border: 1px solid;"/>
 
 6. 「Authorize Keymap Editor」をクリック
 
-<img src="image/keymap_editor/ke_006.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_006.png" width="60%" style="border: 1px solid;"/>
 
 7. 「Add Repository」をクリック
 
-<img src="image/keymap_editor/ke_007.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_007.png" width="60%" style="border: 1px solid;"/>
 
 8. 「Only select repositories」のラジオボタンを選択 -> 「Select repositories」のプルダウンから「zmk-config-mtk64」を選択 -> 「Install」をクリック
 
-<img src="image/keymap_editor/ke_008.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_008.png" width="60%" style="border: 1px solid;"/>
 
 9. キーマップエディター画面でフォークしたリポジトリとブランチを選択　フットスイッチ無線化モジュールを使用する場合masterブランチを選択　フットスイッチ無線化モジュールを使用しない場合nofootブランチを選択
 
-<img src="image/keymap_editor/ke_009.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_009.png" width="60%" style="border: 1px solid;"/>
 
 10. キーをクリックして編集　例として、エンコーダーのキーマップを変更
 
-<img src="image/keymap_editor/ke_010.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_010.png" width="60%" style="border: 1px solid;"/>
 
 11. saveボタンを押して変更したキーマップをコミット
 
-<img src="image/keymap_editor/ke_011.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_011.png" width="60%" style="border: 1px solid;"/>
 
 12. フォークした自分のzmk-config-mtk64リポジトリをブラウザで開く -> Actionsメニュー　-> .github/workflows/build.yml選択 ->  「Run workflow」クリック-> Run workflow
 
-<img src="image/keymap_editor/ke_012.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_012.png" width="60%" style="border: 1px solid;"/>
 
 13. 実行完了後、「Merge Output Artifacts」を開く
 
-<img src="image/keymap_editor/ke_013.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_013.png" width="60%" style="border: 1px solid;"/>
 
 14. Artifact download URL:のリンクから、ビルドしたファームウェアをダウンロード
-<img src="image/keymap_editor/ke_014.png" width="80%" style="border: 1px solid;"/>
+<img src="image/keymap_editor/ke_014.png" width="60%" style="border: 1px solid;"/>
 
 15. [ファームウェア書き込み](#ファームウェア書き込み)の手順に従って書き込み
 
