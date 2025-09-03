@@ -374,7 +374,11 @@ ZMK Studioを使用することで、ファームウェア書き換えなしで�
 
 <img src="image/keymap_editor/ke_001.png" width="60%" style="border: 1px solid;"/>
 
-2. 「Create fork」のボタンをクリック
+2. 「Copy the master branch only」のチェックボックスを外してから、「Create fork」のボタンをクリック
+
+> [!CAUTION]
+> 「Copy the master branch only」のチェックボックスを外してください<br>
+> チェックをつけたままフォークすると、master以外のブランチ（nofootなど）がコピーされません
 
 <img src="image/keymap_editor/ke_002.png" width="60%" style="border: 1px solid;"/>
 
